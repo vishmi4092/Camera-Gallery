@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Poppins:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.video-cont{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+}
+
+.record-capture-cont{
+    width: 6rem;
+    height: 12rem;
+    position: absolute;
+    display: flex;
+    top: calc(50vh - 6rem);
+    right:0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.record-cont{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: solid 5px white;
+    display: flex;
+    justify-content: center ;
+}
+
+.record-btn{
+    width: 3rem;
+    height: 3rem;
+    background-color: red;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.capture-cont{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: solid 5px white;
+    display: flex;
+    justify-content: center ;
+}
+
+.capture-btn{
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.record-btn-anim{
+    animation-name: record-btn-anim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.capture-btn-anim{
+    animation-name: record-btn-anim;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes record-btn-anim{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes capture-btn-anim{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+.timer-cont{
+    font-family: 'Barlow', sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10rem;
+    height: 5rem;
+    color: white;
+    background-color:grey;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 2rem;
+}
+
+.gallery-btn{
+    position: absolute;
+    right: 2rem;
+    bottom: 20rem;
+    color: white;
+}
+
+
+
